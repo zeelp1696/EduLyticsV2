@@ -1,0 +1,24 @@
+From your backend folder:
+
+# 1. Create virtual env (only once)
+python -m venv venv
+
+# 2. Activate it
+# On Windows (PowerShell):
+.\venv\Scripts\activate
+
+# 3. Install all dependencies
+pip install -r requirements.txt
+
+
+Any time you set up this project on a new machine:
+
+python -m venv venv
+
+.\venv\Scripts\activate
+
+pip install -r requirements.txt
+
+You’re then ready to run:
+bash:
+uvicorn app.main:app --reload
